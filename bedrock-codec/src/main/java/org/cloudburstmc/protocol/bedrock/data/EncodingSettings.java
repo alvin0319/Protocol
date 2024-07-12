@@ -55,11 +55,11 @@ public class EncodingSettings {
      * as it will allow any large packets to be received.
      */
     public static final EncodingSettings UNLIMITED = EncodingSettings.builder()
-            .maxListSize(-1)
-            .maxByteArraySize(-1)
-            .maxNetworkNBTSize(-1)
-            .maxItemNBTSize(-1)
-            .maxStringLength(-1)
+            .maxListSize(0)
+            .maxByteArraySize(0)
+            .maxNetworkNBTSize(0)
+            .maxItemNBTSize(0)
+            .maxStringLength(0)
             .build();
 
     private final int maxListSize;
